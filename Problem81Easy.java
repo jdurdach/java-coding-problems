@@ -51,7 +51,9 @@ public class Problem81Easy {
 			//	Print the results depending on the length of the input
 			switch(length) {
 				case 1 :
-					for(int i = 0; i < map[Integer.parseInt(y[0])].length; i++) {					
+					//	Find the length of respective number's array in the map
+					for(int i = 0; i < map[Integer.parseInt(y[0])].length; i++) {	
+						//	Add each possible combination to the result ArrayList
 						result.add(map[Integer.parseInt(y[0])][i]);
 					}
 				break;
